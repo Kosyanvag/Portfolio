@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #012F42;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.app {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100vh; 
+}
+.game{
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid cadetblue;
+  background-color: cadetblue;
+  color: darkred;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.square:hover{
+  scale: 1.05;
+}
+
+.square:hover {
+  background-color: rgb(129, 227, 230);
+  border: 2px solid rgb(129,227,230);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.restart{
+  margin-top: 30px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 30px;
+  color: darkred;
+  background-color: cadetblue;
+  font-size:18px;
+}
+.restart:hover{
+  animation: scale 1s ease;
+ 
+}
+h1{
+  color: cadetblue;
+  span{
+    color: darkred;
+  }
+}
+@keyframes scale {
+  0%{
+     scale: 1;
+  }
+  100%{
+    scale:1.1;
+  }
+}
